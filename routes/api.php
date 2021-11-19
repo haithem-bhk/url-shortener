@@ -17,4 +17,4 @@ use App\Models\Url;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/urls',['uses'=>'urlController@shortenUrlApi']);
+Route::post('/urls',['uses'=>'urlController@shortenUrlApi']);
